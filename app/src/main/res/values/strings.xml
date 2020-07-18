@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Ginger Scan</string>
+    <string name="document">Document</string>
+    <string name="aadhar">Aadhar</string>
+    <string name="passport">Passport</string>
+    <string name="voter_id">Voter ID</string>
+    <string name="card_scan">Card Scan</string>
+    <string name="all_docs">All Docs(_)</string>
+    <string name="user_name">User Name</string>
+    <string name="rank_scanner">Ginger Scan</string>
+    <string name="like_never_before">Like Never Before!!</string>
+    <string name="help">Help</string>
+    <string name="more_settings">More Settings</string>
+    <string name="sync">Sync</string>
+    <string name="scan">Scan</string>
+    <string name="account">Account</string>
+    <string name="book">Book</string>
+    <string name="pan_card">Pan Card</string>
+    <string name="qr_code">QR/Bar Code</string>
+    <string name="add_signature">Add Signature</string>
+    <string-array name="Prg">
+        <item>Sample Document</item>
+    </string-array>
+    <string-array name="date">
+        <item>18–07-20</item>
+    </string-array>
+</resources>

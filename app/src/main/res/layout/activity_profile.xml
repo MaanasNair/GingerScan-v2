@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    tools:context=".profileActivity">
+
+    <ImageView
+        android:id="@+id/bottombg2"
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/rectangle_bottom" />
+
+    <ImageView
+        android:id="@+id/all_docs"
+        android:layout_width="23dp"
+        android:layout_height="25dp"
+        android:background="@drawable/bg_of_btn"
+        app:layout_constraintBottom_toBottomOf="@+id/bottombg2"
+        app:layout_constraintEnd_toEndOf="@+id/bottombg2"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottombg2"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/docs" />
+
+    <ImageView
+        android:id="@+id/profile2"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:background="@drawable/bg_of_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.958"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottombg2"
+        app:layout_constraintVertical_bias="0.25"
+        app:srcCompat="@drawable/ic_baseline_account_box_24" />
+
+
+    <ImageView
+        android:id="@+id/camera2"
+        android:layout_width="91dp"
+        android:layout_height="65dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.935"
+        app:srcCompat="@drawable/cam" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage_circle"
+        android:layout_width="128dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="420dp"
+        android:src="@drawable/profile_sample"
+        app:layout_constraintBottom_toTopOf="@+id/bottombg2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/backtoMain"
+        android:layout_width="38dp"
+        android:layout_height="78dp"
+        android:layout_marginBottom="81dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="450dp"
+        android:fontFamily="sans-serif-black"
+        android:hint="@string/user_name"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/bottombg2"
+        app:layout_constraintEnd_toStartOf="@+id/profileImage_circle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.888" />
+
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="30dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/account"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scan"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/scan"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/account"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toStartOf="@+id/account"
+        app:layout_constraintTop_toBottomOf="@+id/account" />
+
+    <TextView
+        android:id="@+id/sync"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/sync"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/scan"
+        app:layout_constraintStart_toStartOf="@+id/scan"
+        app:layout_constraintTop_toBottomOf="@+id/scan" />
+
+    <TextView
+        android:id="@+id/moreSetting"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/more_settings"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/help"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/help"
+        app:layout_constraintTop_toBottomOf="@+id/help"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="325dp"
+        android:layout_height="35dp"
+        android:layout_margin="5dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/help"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/sync"
+        app:layout_constraintStart_toStartOf="@+id/sync"
+        app:layout_constraintTop_toBottomOf="@+id/sync" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/account"
+        app:layout_constraintEnd_toStartOf="@+id/account"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/account"
+        app:srcCompat="@drawable/account" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/scan"
+        app:layout_constraintEnd_toStartOf="@+id/scan"
+        app:layout_constraintHorizontal_bias="0.826"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scan"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/scan" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/sync"
+        app:layout_constraintEnd_toStartOf="@+id/sync"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sync"
+        app:srcCompat="@drawable/sync" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="33dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/help"
+        app:layout_constraintEnd_toStartOf="@+id/help"
+        app:layout_constraintHorizontal_bias="0.775"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/help"
+        app:srcCompat="@drawable/help" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="32dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="@+id/moreSetting"
+        app:layout_constraintEnd_toStartOf="@+id/moreSetting"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/moreSetting"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/setteing" />
+</androidx.constraintlayout.widget.ConstraintLayout>
