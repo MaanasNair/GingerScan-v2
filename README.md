@@ -4,17 +4,22 @@
 <h2><bold><i>Instructions For Use (legal):</i></bold></h2>
 <h4><bold><i>Fork The Project:</i></bold></h4>
 <i>For Windows Users</i>
-<code>git clone https://github.com/MaanasNair/GingerScan.git</code>
+<br>
+<pre>git clone https://github.com/MaanasNair/GingerScan.git</pre>
+<br>
 <i>For Mac Users</i>
-<code>$ git clone https://github.com/MaanasNair/GingerScan.git</code>
-<br><br>
+<br>
+<pre>$ git clone https://github.com/MaanasNair/GingerScan.git</pre>
+<br>
+<br>
+<br>
 <h4><i>Do NPM Install</i></h4>
-<i>For Windows Users</i>
-<code>npm install</code>
-<i>For Mac Users</i>
-<code>$ npm install</code>
-<i>For Linux Users:</i>
-<code>$bash npm i -latest</code>
+<i>For <code>Windows</code> Users</i><br>
+<pre>npm install</pre><br>
+<i>For <code>MacOS</code> Users</i><br>
+<pre>$ npm install</pre><br>
+<i>For <code>Linux- KALI, UBUNTU</code> Users:</i><br>
+<pre>$bash npm i -latest</pre><br>
 <br><br>
 <h4><i><bold>Import the Project</bold></i></h4>
 <img src="img/img1.png" alt="step3-import-the-project" about="step3-import-the-project" onclick="http://maanasnair.in">
@@ -22,24 +27,24 @@
 <h4><i><bold>Create a keystore:</bold></i></h4>
 <i>In Terminal of Android Studio</i>
 <i>Warning: Make sure you have <a href="http://maanasnair.in">keytool</a> installed!<br>or install it from <a href="http://maanasnair.in/downloads/keytool"></a></i>
-<code>keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</code>
+<pre>keytool -genkey -v -keystore ~/key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias key</pre>
 <br>
 <i>Note: Keep this file private; do not check it into public source control.</i>
 <br>
 <i>Note: keytool may not be in your path. It is part of the Java JDK, which is installed as part of Android Studio. For the concrete path, run flutter doctor -v and see the path printed after ‘Java binary at:’, and then use that fully qualified path replacing java with keytool.</i>
 <br><br>
-<h4><i><bold>Create a keystore.properties file with the below code:</bold></i></h4>
-<i>Just create a new file in the root of the project where the "build.gradle" file is located. Just name it: "keystore.properties"</i>
-<code>storePassword=<yourKeystorePassword>
+<h4><i><bold>Create a keystore.properties file with the below code:</bold></i></h4><br>
+<i>Just create a new file in the root of the project where the "build.gradle" file is located. Just name it: "keystore.properties"</i><br>
+<pre>storePassword=<yourKeystorePassword>
       keyPassword=<yourKeyPassword>
       keyAlias=<yourAlias>
-      storeFile=<locationOfYourKeystoreFile e.g. /Users/user name/key.jks></locationOfYourKeystoreFile></code>
+      storeFile=<locationOfYourKeystoreFile e.g. /Users/user name/key.jks></locationOfYourKeystoreFile></pre>
 <i>Note: Replace the "storePassword=''" with your original file.</i>
-<code>def keystorePropertiesFile = rootProject.file("key.properties")
+<pre>def keystorePropertiesFile = rootProject.file("key.properties")
       def keystoreProperties = new Properties()
       keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-</code>
-<code>signingConfigs {
+</pre>
+<pre>signingConfigs {
           release {
               keyAlias keystoreProperties['keyAlias']
               keyPassword keystoreProperties['keyPassword']
@@ -51,11 +56,56 @@
           release {
               signingConfig signingConfigs.release
           }
-      }</code>
+      }</pre>
 <br><br>
-<h4><i><bold>That's it! Now Just Build your apk by deploying the following code:</bold></i></h4>
-<code>Code Not yet updated. REASON: I'M TOO LAZY, LMAO</code>
+<h4><i><bold>Run the task</bold></i></h4><br>
+<i>On Windows</i><br>
+<pre>gradlew ginger-scan</pre><br>
+<i>On Mac</i><br>
+<pre>./gradlew ginger-scan</pre>
+<br><br>
+<h4><i><bold>To see a list of available build tasks, execute </bold></i><code>task</code>:</h4>
+<br><pre>gradlew tasks</pre>
+<br><br>
+<h4><i><bold>To build a debug APK, open a command line and navigate to the root of your project directory. To initiate a debug build, invoke the <code>assembleDebug task</code>:</bold></i></h4>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <p>If i don't update the code, then please contact me:<br>Email:<a href="mailto:bee.birdiecorporation@gmail.com">bee.birdiecorporation@gmail.com</a><br>Phone No.<a href="tel:+919575579045">+91 95755 79045</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <br><br><br>
 <h4>Open Source Licenses:</h4>
 
