@@ -5,11 +5,11 @@ android {
     buildToolsVersion "30.0.0"
 
     defaultConfig {
-        applicationId "com.example.rank_scanner"
+        applicationId "com.maanasnair.scanV1.9.91"
         minSdkVersion 21
         targetSdkVersion 30
-        versionCode 1
-        versionName "1.0"
+        versionCode 120
+        versionName "1.9.91"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
