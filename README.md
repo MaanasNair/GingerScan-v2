@@ -1,4 +1,4 @@
-<h1>Ginger Scan</h1>
+<h1>Ginger Scan</h1>//update 1.9.91
 <h4>Made By Maanas Nair</h4>
 <br><br><br>
 <h2><bold><i>Instructions For Use (legal):</i></bold></h2>
